@@ -1,6 +1,5 @@
 <?php
 global $CFG;
-require_once $CFG->dirroot . '/blocks/sentinel/lib.php';
 
 class block_sentinel extends block_base {
 
