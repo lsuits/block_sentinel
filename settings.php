@@ -11,18 +11,18 @@ if ($ADMIN->fulltree) {
 
     $settings->add(
             new admin_setting_configtext(
-                    'block_proctoru/profilefield_shortname',
-                    get_string('profilefield_shortname', 'block_proctoru'),
-                    get_string('profilefield_shortname_description', 'block_proctoru'),
+                    'block_sentinel/profilefield_shortname',
+                    get_string('profilefield_shortname', 'block_sentinel'),
+                    get_string('profilefield_shortname_description', 'block_sentinel'),
                     ''
             )
     );
     
     $settings->add(
             new admin_setting_configmultiselect(
-                    'block_proctoru/roleselection',
-                    get_string('roleselection_label', 'block_proctoru'),
-                    get_string('roleselection_description', 'block_proctoru'),
+                    'block_sentinel/roleselection',
+                    get_string('roleselection_label', 'block_sentinel'),
+                    get_string('roleselection_description', 'block_sentinel'),
                     $exemptRoles,
                     $roles
             )
@@ -30,87 +30,87 @@ if ($ADMIN->fulltree) {
 
     $settings->add(
             new admin_setting_configtext(
-                    'block_proctoru/excluded_courses',
-                    get_string('excluded_courses', 'block_proctoru'),
-                    get_string('excluded_courses_description', 'block_proctoru'),
+                    'block_sentinel/excluded_courses',
+                    get_string('excluded_courses', 'block_sentinel'),
+                    get_string('excluded_courses_description', 'block_sentinel'),
                     ''
             )
     );
     
     $settings->add(
             new admin_setting_configtext(
-                    'block_proctoru/landing_course',
-                    get_string('landing_course', 'block_proctoru'),
-                    get_string('landing_course_description', 'block_proctoru'),
+                    'block_sentinel/landing_course',
+                    get_string('landing_course', 'block_sentinel'),
+                    get_string('landing_course_description', 'block_sentinel'),
                     ''
             )
     );
 
     $settings->add(
             new admin_setting_configtext(
-                    'block_proctoru/proctoru_token',
-                    get_string('proctoru_token', 'block_proctoru'),
-                    get_string('proctoru_token_description', 'block_proctoru'),
+                    'block_sentinel/sentinel_token',
+                    get_string('sentinel_token', 'block_sentinel'),
+                    get_string('sentinel_token_description', 'block_sentinel'),
                     ''
             )
     );
     $settings->add(
             new admin_setting_configtext(
-                    'block_proctoru/proctoru_api',
-                    get_string('proctoru_api', 'block_proctoru'),
-                    get_string('proctoru_api_description', 'block_proctoru'),
-                    ''
-            )
-    );
-
-    $settings->add(
-            new admin_setting_configtext(
-                    'block_proctoru/credentials_location',
-                    get_string('credentials_location', 'block_proctoru'),
-                    get_string('credentials_location_description', 'block_proctoru'),
+                    'block_sentinel/sentinel_api',
+                    get_string('sentinel_api', 'block_sentinel'),
+                    get_string('sentinel_api_description', 'block_sentinel'),
                     ''
             )
     );
 
     $settings->add(
             new admin_setting_configtext(
-                    'block_proctoru/localwebservice_url',
-                    get_string('localwebservice_url', 'block_proctoru'),
-                    get_string('localwebservice_url_description', 'block_proctoru'),
+                    'block_sentinel/credentials_location',
+                    get_string('credentials_location', 'block_sentinel'),
+                    get_string('credentials_location_description', 'block_sentinel'),
                     ''
             )
     );
 
     $settings->add(
             new admin_setting_configtext(
-                    'block_proctoru/localwebservice_userexists_servicename',
-                    get_string('localwebservice_userexists_servicename', 'block_proctoru'),
-                    get_string('localwebservice_userexists_servicename_description', 'block_proctoru'),
-                    ''
-            )
-    );
-    $settings->add(
-            new admin_setting_configtext(
-                    'block_proctoru/localwebservice_fetchuser_servicename',
-                    get_string('localwebservice_fetchuser_servicename', 'block_proctoru'),
-                    get_string('localwebservice_fetchuser_servicename_description', 'block_proctoru'),
+                    'block_sentinel/localwebservice_url',
+                    get_string('localwebservice_url', 'block_sentinel'),
+                    get_string('localwebservice_url_description', 'block_sentinel'),
                     ''
             )
     );
 
     $settings->add(
             new admin_setting_configtext(
-                    'block_proctoru/stu_profile',
-                    get_string('stu_profile', 'block_proctoru'),
-                    get_string('stu_profile_description', 'block_proctoru'),
+                    'block_sentinel/localwebservice_userexists_servicename',
+                    get_string('localwebservice_userexists_servicename', 'block_sentinel'),
+                    get_string('localwebservice_userexists_servicename_description', 'block_sentinel'),
+                    ''
+            )
+    );
+    $settings->add(
+            new admin_setting_configtext(
+                    'block_sentinel/localwebservice_fetchuser_servicename',
+                    get_string('localwebservice_fetchuser_servicename', 'block_sentinel'),
+                    get_string('localwebservice_fetchuser_servicename_description', 'block_sentinel'),
+                    ''
+            )
+    );
+
+    $settings->add(
+            new admin_setting_configtext(
+                    'block_sentinel/stu_profile',
+                    get_string('stu_profile', 'block_sentinel'),
+                    get_string('stu_profile_description', 'block_sentinel'),
                     '')
     );
 
     $settings->add(
             new admin_setting_configcheckbox(
-                    'block_proctoru/bool_cron',
-                    get_string('cron_run', 'block_proctoru'),
-                    get_string('cron_desc', 'block_proctoru'),
+                    'block_sentinel/bool_cron',
+                    get_string('cron_run', 'block_sentinel'),
+                    get_string('cron_desc', 'block_sentinel'),
                     true, true, false)
     );
 }

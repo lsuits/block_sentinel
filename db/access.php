@@ -1,7 +1,7 @@
 <?php
     $capabilities = array(
  
-    'block/proctoru:myaddinstance' => array(
+    'block/sentinel:myaddinstance' => array(
         'captype' => 'write',
         'contextlevel' => CONTEXT_SYSTEM,
         'archetypes' => array(
@@ -11,7 +11,7 @@
         'clonepermissionsfrom' => 'moodle/my:manageblocks'
     ),
  
-    'block/proctoru:addinstance' => array(
+    'block/sentinel:addinstance' => array(
  
         'captype' => 'write',
         'contextlevel' => CONTEXT_BLOCK,
