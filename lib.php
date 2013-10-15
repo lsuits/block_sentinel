@@ -9,7 +9,7 @@ interface Sentinel {
      * false is the opposite ;)
      * @param stdClass $user
      */
-    public function allowUser(stdClass $user);
+    public static function allowUser(stdClass $user);
 }
 
 ?>
