@@ -2,7 +2,10 @@
 $string['pluginname'] = "Sentinel";
 
 $string['clients'] = "Client Classes";
-$string['clients_description'] = "Client Classes implementing the Sentinel interface will be called to determine whether or not a user may pass.";
+$string['clients_description'] = "Client classes implementing the Sentinel 
+    interface will be called to determine whether or not a user may pass.
+    The class must be named according to the frankenstyle convention, 
+    and it must be defined in a file called sentinel.php";
 
 $string['not_complete'] = "You have not completed all requirements yet, please continue to the Orientation Course";
 
