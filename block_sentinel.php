@@ -55,8 +55,7 @@ class block_sentinel extends block_base {
         } elseif(!$excluded){
             header("Location: /blocks/sentinel/index.php");
         } else {
-//            var_dump($result);
-//            var_dump($COURSE);
+
 //            throw new Exception("All tests did not pass AND the course in question is NOT in the excluded set. Unknown error");
         }
     }
