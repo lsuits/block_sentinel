@@ -16,7 +16,7 @@ class block_sentinel extends block_base {
     }
 
     public function applicable_formats() {
-        return array('site' => true, 'my' => false, 'course' => true);
+        return array('site' => true, 'my' => false, 'course' => true, 'mod' => true);
     }
 
     public function get_content() {
@@ -55,7 +55,7 @@ class block_sentinel extends block_base {
             if($result == count($clients)){
                 return $this->content;
             } elseif(!$excluded){
-                header("Location: /blocks/sentinel/index.php");
+                header("Location: " . $CFG->wwwroot . "/blocks/sentinel/index.php");
             } else {
 
     //            throw new Exception("All tests did not pass AND the course in question is NOT in the excluded set. Unknown error");
